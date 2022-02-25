@@ -10,17 +10,26 @@
 
 <body id="body">
     <header>
+        <div class="w3-top">
+            <nav>
+                <div>
+                <a href="#about" class="nav-bar-item nav-button">About</a>
+                <a href="#portfolio" class="nav-bar-item nav-button">Portfolio</a>
+                <a href="#contact" class="nav-bar-item nav-button">Contact</a>
+                </div>
+            </nav>
+        </div>
+
         <div id="header">
-            <div class="header-image-container">
-            </div>
-            <h1 style="color: aliceblue; font-size: 2rem;" class="header-title">Mirikau Food Photography</h1>
+            <div class="header-image-container"></div>
+            <h1 class="header-title">Mirikau Food Photography</h1>
         </div>
     </header>
     <main>
         <div id="about">
             <img src="Images/About.jpg" width="50%" height="500vh" id="about_image">
             <div id="about_content">
-                <h2 id="about_title">About Me</h2>
+                <a id="about"><h2 id="about_title">About Me</h2></a>
                 <p>For the better part of my life, I have identified as a creative. My enthusiasm for
                     growth has brought with it many experiences, skills, challenges and lessons.
                     I carry with me many titles.</p>
@@ -36,41 +45,43 @@
                 </p>
             </div>
         </div>
-        <h2 id="port">Portfolio</h2>
-        <br />
-        <h3 class="titles">Photos</h3>
-          <section id="photos">
-                <img src="Images/Milk.jpg" width="260px" class="Photos_item"/>
-                <img src="Images/Cupcake.jpg" width="260px" class="Photos_item"/>
-                <img src="Images/Bread.jpg" width="260px" class="Photos_item"/>
-                <img src="Images/Bean.jpg" width="260px" class="Photos_item"/>
-                <img src="Images/Velcake.jpg" width="260px" class="Photos_item"/>
-                <img src="Images/Oreo.jpg" width="260px" class="Photos_item"/>
-                <img src="Images/Wine.jpg" width="260px" class="Photos_item"/>
-                <img src="Images/Moody.jpg" width="260px" class="Photos_item"/>
-            </section>
-        
-        <hr />
-        <section class="silver">
-            <section>
-                <h3 class="titles" id="vid_title">Videos</h3>
-                <div id="vid">
-                    <video src="Videos/cup.mp4" controls width="260px" class="vid_item">Cup a Muffin</video>
-                    <video src="Videos/green.mp4" controls width="260px" class="vid_item">Going Green</video>
-                </div>
-            </section>
-
+        <article>
+            <a id="portfolio"><h2 id="port">Portfolio</h2></a>
+            <br />
+            <h3 class="titles">Photos</h3>
+            <section id="photos">
+                    <img src="Images/Milk.jpg" width="260px" class="Photos_item"/>
+                    <img src="Images/Cupcake.jpg" width="260px" class="Photos_item"/>
+                    <img src="Images/Bread.jpg" width="260px" class="Photos_item"/>
+                    <img src="Images/Bean.jpg" width="260px" class="Photos_item"/>
+                    <img src="Images/Velcake.jpg" width="260px" class="Photos_item"/>
+                    <img src="Images/Oreo.jpg" width="260px" class="Photos_item"/>
+                    <img src="Images/Wine.jpg" width="260px" class="Photos_item"/>
+                    <img src="Images/Moody.jpg" width="260px" class="Photos_item"/>
+                </section>
+            
             <hr />
+            <section class="silver">
+                <section>
+                    <h3 class="titles" id="vid_title">Videos</h3>
+                    <div id="vid">
+                        <video src="Videos/cup.mp4" controls width="260px" class="vid_item">Cup a Muffin</video>
+                        <video src="Videos/green.mp4" controls width="260px" class="vid_item">Going Green</video>
+                    </div>
+                </section>
 
-            <h3 class="titles">BTS</h3>
-            <section id="bts">
-                <video src="Videos/Bts.mp4" width="260px" id="bts_item" controls loop>Video not available</video>
+                <hr />
+
+                <h3 class="titles">BTS</h3>
+                <section id="bts">
+                    <video src="Videos/Bts.mp4" width="260px" id="bts_item" controls loop>Video not available</video>
+                </section>
             </section>
-        </section>
+        </article>
     </main>
 
     <footer id="footer">
-        <h3 class="titles" id="footer-title">Get in Touch</h3>
+        <a id="contact"><h3 class="titles" id="footer-title">Get in Touch</h3></a>
         <img src="Images/Contact.jpg" width="280px" style="border-radius: 500px" />
         <br />
         <button id="button">dodmirikau@gmail.com</button>
