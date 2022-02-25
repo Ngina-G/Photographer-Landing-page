@@ -2,44 +2,49 @@ body{
     columns: 1;
     background: linear-gradient(to bottom, black 10%, orange 20%, black 90%);
 }
-#header{
-   /* background-color: black;
-    background-image: url(Images/Cupcake.jpg);*/
-    background-size: 100vw;  
+.navbar-element{
+    display: inline;
+}
+.navbar-container{
+    float: right;
+}
+.navbar-item{
+    padding-right: 65px;
+    color: orange;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1em;
+}
+.navbar-item::after{
+    color: white;
+}
+#heading{
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content:center;
- /*   width: 100%; */
-    overflow: auto;
-}
-#header::after{
-    content:'';
-    clear: both;
-    width:700px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
+    overflow: hidden;
+    margin-top: 40px;
 }
 .header-image-container{
     background-image: url('Images/Cupcake.jpg');
     background-size: contain;
     background-repeat: no-repeat;
-    width: 700px;
-    height: 500px;
-    padding: 20px;
+    width: 600px;
+    height: 400px;
+    padding: 30px;
     margin: 20px;
 
 }
 .header-title{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    padding-top: 5px;
+    padding-left: 90px;
+    padding-bottom: 55px;
     text-align: center;
-    font-size: 5rem;
+    font-size: 4rem;
     color: aliceblue;
-    position: static;
+    position: relative;
 }
 
 #about {
@@ -95,8 +100,6 @@ body{
 .Photos_item:hover{
     transform: scale(1.1);
     transition: all 0.5s ease-in;
-}
-.silver{
 }
 #vid{
     display: flex;
