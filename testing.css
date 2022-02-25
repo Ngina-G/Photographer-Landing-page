@@ -1,0 +1,132 @@
+body{
+    columns: 1;
+    background-color: lightgray;
+}
+#header{
+    background-color: black;
+   /* background-image: url(Images/Cupcake.jpg);*/
+    background-size: 100vw;  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+ /*   width: 100%; */
+    overflow: auto;
+}
+#header::after{
+    content:'';
+    clear: both;
+    display: block;
+}
+.header-title{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 2px;
+    padding-top: 5px;
+    text-align: center;
+    width:110vw;
+
+}
+.header-image{
+    padding: 10px;
+    width: 30vw;
+}
+#about {
+    size: 100%;
+    display: flex;
+    flex-direction:row;
+}
+#about_content{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-justify: newspaper;
+    color: whitesmoke;
+    margin: 1em;
+    padding: 120px 30px 0px 30px;
+    background-color: rgba(0, 0, 0, 0.952);
+    width: 40%;
+}
+#about_image{
+    padding: 1em;
+  
+}
+
+#about_title{
+    Text-align: center;
+}
+#port{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2em;
+}
+#port:hover{
+    transform: scale(1.5);
+    Color: grey;
+    transition: all 0.8s linear;
+}
+.titles{
+    text-align: center;
+    font-size: xx-large;
+}/*
+#photos{
+    viewport-fit:inherit;
+    display:grid;
+    align-content: space-evenly;
+    justify-content: space-around;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto auto auto;
+    grid-row-gap: 10px;
+}
+.Photos_item:hover{
+    transform: scale(1.1);
+    transition: all 0.5s ease-in;
+}*/
+.silver{
+background: linear-gradient(to bottom, silver, slategray);
+}
+#vid{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    border: solid 5px black;
+    flex-wrap: wrap;
+}
+#vid_title{
+    margin-top: 25px;
+}
+#bts{
+    border: solid 5px black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:end;
+}
+#bts_item{
+    padding: 10px;
+}
+#footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+#button{
+    background: black;
+    border: double black;
+    padding: 10px;
+    box-shadow: slategrey 1px;
+    width: 200px;
+    color: snow;
+    font-family: monospace;
+}
+#button:hover{
+    transform: scale(1.1);
+    background: slategray;
+    color: indigo;
+}
+#button:visited{
+    color:maroon;
+}
+#footer-title{
+    font-size: xx-large;
+    text-align: left;
+}
